@@ -14,7 +14,7 @@ pipeline {
 	 whoami
          aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin $DOCKER_REGISTRY
 	 docker build -t shivaproject1 .
-         docker tag docker-server:latest $DOCKER_REGISTRY/shivaprojet1:${BUILD_NUMBER}
+         docker tag shivaproject1:latest $DOCKER_REGISTRY/shivaprojet1:${BUILD_NUMBER}
          docker push $DOCKER_REGISTRY/shivaproject1:${BUILD_NUMBER}
 	  '''
       }
