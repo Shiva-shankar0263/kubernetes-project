@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: "kubeproject"
-          image: "933542948767.dkr.ecr.ap-northeast-2.amazonaws.com/shivaproject2:buildNumber"
+          image: "092101872227.dkr.ecr.ap-northeast-2.amazonaws.com/shivaproject1:buildNumber"
           resources:
             requests:
               memory: "64Mi"
